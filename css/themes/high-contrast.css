@@ -1,0 +1,161 @@
+/**
+ * AccessiChef - High Contrast Theme
+ * 
+ * This stylesheet provides a high contrast color scheme for the AccessiChef application,
+ * which is especially helpful for users with visual impairments or color blindness.
+ */
+
+ :root {
+    /* High contrast color variables */
+    --primary-color: #0066cc;
+    --secondary-color: #003366;
+    --accent-color: #ff9900;
+    --text-color: #000000;
+    --background-color: #ffffff;
+    --light-background: #f0f0f0;
+    --border-color: #000000;
+    
+    /* Card colors */
+    --card-background: #ffffff;
+    --card-border: #000000;
+    
+    /* Button colors */
+    --btn-primary-bg: #0066cc;
+    --btn-primary-text: #ffffff;
+    --btn-secondary-bg: #f0f0f0;
+    --btn-secondary-text: #000000;
+    
+    /* Form colors */
+    --input-background: #ffffff;
+    --input-border: #000000;
+    --input-text: #000000;
+    
+    /* Focus state */
+    --focus-outline-color: #ff9900;
+}
+
+/* Apply high contrast theme colors to elements */
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Increased text contrast */
+p, li, span, label, .card-text {
+    color: var(--text-color);
+}
+
+/* Bold headings for better visibility */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Header and navigation with strong contrast */
+.navbar {
+    background-color: var(--light-background) !important;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    color: var(--primary-color) !important;
+    text-decoration: underline;
+}
+
+/* Card elements with clear borders */
+.card {
+    background-color: var(--card-background);
+    border: 2px solid var(--card-border);
+}
+
+.card-header, .card-footer {
+    background-color: var(--light-background);
+    border-color: var(--border-color);
+}
+
+/* High contrast buttons */
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    border-color: var(--border-color);
+    color: var(--btn-primary-text);
+    font-weight: bold;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--secondary-color);
+    border-color: var(--border-color);
+    text-decoration: underline;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary-bg);
+    border: 2px solid var(--border-color);
+    color: var(--btn-secondary-text);
+    font-weight: bold;
+}
+
+/* Form elements with clear borders */
+input, select, textarea {
+    background-color: var(--input-background);
+    border: 2px solid var(--input-border);
+    color: var(--input-text);
+}
+
+/* Enhanced focus states */
+a:focus, button:focus, input:focus, select:focus, textarea:focus, [tabindex]:focus {
+    outline: 3px solid var(--focus-outline-color);
+    outline-offset: 3px;
+}
+
+/* Lists with enhanced visibility */
+.ingredients-list li, .instructions-list li {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+
+/* Tab navigation */
+.nav-tabs {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    background-color: var(--light-background);
+    border: 2px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--background-color);
+    border-color: var(--border-color);
+    border-bottom-color: var(--background-color);
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+/* Footer with clear separation */
+footer {
+    background-color: var(--light-background);
+    border-top: 2px solid var(--border-color);
+    color: var(--text-color);
+}

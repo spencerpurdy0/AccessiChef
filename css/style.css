@@ -1,0 +1,297 @@
+/**
+ * AccessiChef - Main Stylesheet
+ * 
+ * This stylesheet contains the core styling for the AccessiChef application,
+ * focusing on layout, typography, and component styling that is not
+ * specifically related to accessibility features.
+ */
+
+/* ====================
+   Global Styles
+   ==================== */
+
+   :root {
+    /* Color variables */
+    --primary-color: #5b8e7d;
+    --secondary-color: #8fc0a9;
+    --accent-color: #f8b400;
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --light-background: #f8f9fa;
+    --border-color: #dee2e6;
+    
+    /* Typography */
+    --base-font-size: 16px;
+    --heading-font-family: 'Arial', sans-serif;
+    --body-font-family: 'Arial', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    
+    /* Transitions */
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: var(--body-font-family);
+    font-size: var(--base-font-size);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font-family);
+    margin-top: 0;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+}
+
+a:hover, a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ====================
+   Header and Navigation
+   ==================== */
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color var(--transition-speed) ease;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* ====================
+   Main Content Areas
+   ==================== */
+
+.container {
+    max-width: 1200px;
+    padding: 0 var(--spacing-md);
+}
+
+/* Card styling */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: var(--light-background);
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.card-body {
+    padding: var(--spacing-lg);
+}
+
+.card-footer {
+    background-color: var(--light-background);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+/* ====================
+   Recipe List Styling
+   ==================== */
+
+.recipe-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.recipe-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-meta {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.recipe-meta i {
+    width: 20px;
+    text-align: center;
+    margin-right: var(--spacing-xs);
+}
+
+/* ====================
+   Recipe Detail Styling
+   ==================== */
+
+.recipe-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.back-link {
+    margin-bottom: var(--spacing-md);
+}
+
+.ingredients-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ingredients-list li {
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ingredients-list li:last-child {
+    border-bottom: none;
+}
+
+.instructions-list {
+    padding-left: var(--spacing-lg);
+}
+
+.instructions-list li {
+    margin-bottom: var(--spacing-md);
+}
+
+.nutrition-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.nutrition-item {
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.nutrition-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nutrition-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* ====================
+   Form Elements
+   ==================== */
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* ====================
+   Footer Styling
+   ==================== */
+
+footer {
+    border-top: 1px solid var(--border-color);
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg) 0;
+}
+
+/* ====================
+   Media Queries
+   ==================== */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    :root {
+        --base-font-size: 16px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+        --base-font-size: 16px;
+    }
+    
+    .recipe-image {
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    :root {
+        --base-font-size: 16px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    :root {
+        --base-font-size: 16px;
+    }
+    
+    .container {
+        max-width: 1140px;
+    }
+}

@@ -1,0 +1,2155 @@
+{
+    "recipes": [
+      {
+        "id": "veggie-pasta",
+        "title": "Vegetable Pasta Primavera",
+        "description": "A light and healthy pasta dish loaded with fresh vegetables and herbs. This colorful meal is easy to prepare and full of seasonal flavors.",
+        "category": "dinner",
+        "time": 30,
+        "servings": 4,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe1/veggie-pasta.jpg",
+        "ingredients": [
+          {
+            "name": "whole wheat pasta",
+            "amount": 250,
+            "unit": "g"
+          },
+          {
+            "name": "cherry tomatoes, halved",
+            "amount": 200,
+            "unit": "g"
+          },
+          {
+            "name": "zucchini, sliced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "yellow bell pepper, diced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "red onion, thinly sliced",
+            "amount": 0.5,
+            "unit": ""
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "olive oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "fresh basil, chopped",
+            "amount": 0.25,
+            "unit": "cup"
+          },
+          {
+            "name": "grated Parmesan cheese",
+            "amount": 50,
+            "unit": "g"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.25,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Bring a large pot of salted water to a boil. Add pasta and cook according to package instructions until al dente.",
+            "time": 10
+          },
+          {
+            "text": "While pasta is cooking, heat olive oil in a large skillet over medium heat. Add onion and garlic, sauté for 2 minutes until fragrant.",
+            "time": 2
+          },
+          {
+            "text": "Add zucchini and bell pepper to the skillet, cook for 5 minutes until vegetables begin to soften.",
+            "time": 5
+          },
+          {
+            "text": "Add cherry tomatoes and cook for another 2 minutes.",
+            "time": 2
+          },
+          {
+            "text": "Drain pasta, reserving 1/4 cup of pasta water.",
+            "time": null
+          },
+          {
+            "text": "Add pasta to the skillet with vegetables. Add reserved pasta water, salt, and pepper. Toss to combine.",
+            "time": null
+          },
+          {
+            "text": "Remove from heat and stir in fresh basil and Parmesan cheese. Serve immediately.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "320 kcal",
+          "Protein": "12g",
+          "Carbs": "48g",
+          "Fat": "9g",
+          "Fiber": "7g",
+          "Sugar": "5g"
+        }
+      },
+      {
+        "id": "berry-smoothie",
+        "title": "Mixed Berry Breakfast Smoothie",
+        "description": "A refreshing and nutritious breakfast smoothie packed with antioxidants from mixed berries and protein from Greek yogurt.",
+        "category": "breakfast",
+        "time": 5,
+        "servings": 2,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe2/berry-smoothie.jpg",
+        "ingredients": [
+          {
+            "name": "frozen mixed berries",
+            "amount": 200,
+            "unit": "g"
+          },
+          {
+            "name": "banana",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "Greek yogurt",
+            "amount": 200,
+            "unit": "ml"
+          },
+          {
+            "name": "milk (dairy or plant-based)",
+            "amount": 200,
+            "unit": "ml"
+          },
+          {
+            "name": "honey",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "chia seeds",
+            "amount": 1,
+            "unit": "tbsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Place all ingredients in a blender: frozen berries, banana, Greek yogurt, milk, honey, and chia seeds.",
+            "time": null
+          },
+          {
+            "text": "Blend on high speed until smooth and creamy, about 1 minute.",
+            "time": 1
+          },
+          {
+            "text": "If the smoothie is too thick, add a little more milk and blend again until desired consistency is reached.",
+            "time": null
+          },
+          {
+            "text": "Pour into glasses and serve immediately. You can top with additional berries or a sprinkle of chia seeds if desired.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "210 kcal",
+          "Protein": "9g",
+          "Carbs": "35g",
+          "Fat": "4g",
+          "Fiber": "6g",
+          "Sugar": "26g"
+        }
+      },
+      {
+        "id": "avocado-toast",
+        "title": "Avocado Toast with Poached Egg",
+        "description": "A simple yet delicious breakfast featuring creamy avocado on whole grain toast topped with a perfectly poached egg.",
+        "category": "breakfast",
+        "time": 15,
+        "servings": 2,
+        "difficulty": "Medium",
+        "image": "images/recipes/recipe3/avocado-toast.jpg",
+        "ingredients": [
+          {
+            "name": "whole grain bread slices",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "ripe avocado",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "eggs",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "white vinegar",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.25,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.25,
+            "unit": "tsp"
+          },
+          {
+            "name": "red pepper flakes",
+            "amount": 0.25,
+            "unit": "tsp"
+          },
+          {
+            "name": "lemon juice",
+            "amount": 0.5,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Fill a medium saucepan with water and add vinegar. Bring to a gentle simmer over medium heat.",
+            "time": 3
+          },
+          {
+            "text": "Toast the bread until golden and crisp.",
+            "time": 2
+          },
+          {
+            "text": "Cut the avocado in half, remove the pit, and scoop the flesh into a bowl. Add lemon juice, salt, and pepper. Mash with a fork until spreadable but still slightly chunky.",
+            "time": null
+          },
+          {
+            "text": "Crack one egg into a small bowl. Create a gentle whirlpool in the simmering water and carefully slide the egg in. Repeat with the second egg. Poach for 3-4 minutes for a runny yolk.",
+            "time": 4
+          },
+          {
+            "text": "Spread mashed avocado on the toast slices.",
+            "time": null
+          },
+          {
+            "text": "Using a slotted spoon, remove the poached eggs and place on top of the avocado toast. Sprinkle with red pepper flakes and serve immediately.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "280 kcal",
+          "Protein": "12g",
+          "Carbs": "22g",
+          "Fat": "18g",
+          "Fiber": "8g",
+          "Sugar": "2g"
+        }
+      },
+      {
+        "id": "lentil-soup",
+        "title": "Hearty Lentil Soup",
+        "description": "A warming and nutritious soup packed with lentils, vegetables, and aromatic herbs. Perfect for cold days.",
+        "category": "lunch",
+        "time": 40,
+        "servings": 6,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe4/lentil-soup.jpg",
+        "ingredients": [
+          {
+            "name": "dried green or brown lentils, rinsed",
+            "amount": 300,
+            "unit": "g"
+          },
+          {
+            "name": "onion, diced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "carrots, diced",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "celery stalks, diced",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "vegetable broth",
+            "amount": 1.5,
+            "unit": "l"
+          },
+          {
+            "name": "diced tomatoes",
+            "amount": 400,
+            "unit": "g"
+          },
+          {
+            "name": "olive oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "cumin",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "bay leaf",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "fresh spinach",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "lemon juice",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "salt",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.5,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Heat olive oil in a large pot over medium heat. Add onion, carrots, and celery. Cook for about 5 minutes until vegetables begin to soften.",
+            "time": 5
+          },
+          {
+            "text": "Add garlic and cumin. Cook for another minute until fragrant.",
+            "time": 1
+          },
+          {
+            "text": "Add lentils, diced tomatoes, vegetable broth, and bay leaf. Bring to a boil, then reduce heat to low, cover, and simmer for 25-30 minutes until lentils are tender.",
+            "time": 30
+          },
+          {
+            "text": "Remove bay leaf. Add spinach and cook for an additional 2-3 minutes until wilted.",
+            "time": 3
+          },
+          {
+            "text": "Stir in lemon juice, salt, and pepper. Adjust seasoning to taste.",
+            "time": null
+          },
+          {
+            "text": "Serve hot, optionally topped with a dollop of yogurt or chopped fresh herbs.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "230 kcal",
+          "Protein": "14g",
+          "Carbs": "36g",
+          "Fat": "5g",
+          "Fiber": "17g",
+          "Sugar": "6g"
+        }
+      },
+      {
+        "id": "quinoa-salad",
+        "title": "Mediterranean Quinoa Salad",
+        "description": "A protein-rich salad with quinoa, fresh vegetables, and Mediterranean flavors. Great for meal prep and healthy lunches.",
+        "category": "lunch",
+        "time": 25,
+        "servings": 4,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe5/quinoa-salad.jpg",
+        "ingredients": [
+          {
+            "name": "quinoa, rinsed",
+            "amount": 200,
+            "unit": "g"
+          },
+          {
+            "name": "vegetable broth",
+            "amount": 400,
+            "unit": "ml"
+          },
+          {
+            "name": "cucumber, diced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "cherry tomatoes, halved",
+            "amount": 200,
+            "unit": "g"
+          },
+          {
+            "name": "red bell pepper, diced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "red onion, finely chopped",
+            "amount": 0.5,
+            "unit": ""
+          },
+          {
+            "name": "kalamata olives, pitted and sliced",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "feta cheese, crumbled",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "fresh parsley, chopped",
+            "amount": 0.25,
+            "unit": "cup"
+          },
+          {
+            "name": "extra virgin olive oil",
+            "amount": 3,
+            "unit": "tbsp"
+          },
+          {
+            "name": "lemon juice",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "dried oregano",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.25,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "In a medium saucepan, bring vegetable broth to a boil. Add quinoa, reduce heat to low, cover, and simmer for 15 minutes until liquid is absorbed.",
+            "time": 15
+          },
+          {
+            "text": "Remove from heat and let stand, covered, for 5 minutes. Fluff with a fork and transfer to a large bowl to cool.",
+            "time": 5
+          },
+          {
+            "text": "In a small bowl, whisk together olive oil, lemon juice, oregano, salt, and pepper to make the dressing.",
+            "time": null
+          },
+          {
+            "text": "Add cucumber, cherry tomatoes, bell pepper, red onion, olives, and parsley to the cooled quinoa.",
+            "time": null
+          },
+          {
+            "text": "Pour the dressing over the salad and toss to combine. Gently fold in the feta cheese.",
+            "time": null
+          },
+          {
+            "text": "Refrigerate for at least 30 minutes before serving to allow flavors to meld. Can be stored in the refrigerator for up to 3 days.",
+            "time": 30
+          }
+        ],
+        "nutrition": {
+          "Calories": "320 kcal",
+          "Protein": "11g",
+          "Carbs": "38g",
+          "Fat": "15g",
+          "Fiber": "6g",
+          "Sugar": "4g"
+        }
+      },
+      {
+        "id": "chicken-curry",
+        "title": "Simple Chicken Curry",
+        "description": "A flavorful and aromatic chicken curry that's easy to make at home. Serve with rice or naan bread for a satisfying dinner.",
+        "category": "dinner",
+        "time": 45,
+        "servings": 4,
+        "difficulty": "Medium",
+        "image": "images/recipes/recipe6/chicken-curry.jpg",
+        "ingredients": [
+          {
+            "name": "boneless, skinless chicken thighs, cut into pieces",
+            "amount": 700,
+            "unit": "g"
+          },
+          {
+            "name": "onion, finely chopped",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "ginger, grated",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "curry powder",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "ground turmeric",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "ground cumin",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "garam masala",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "crushed tomatoes",
+            "amount": 400,
+            "unit": "g"
+          },
+          {
+            "name": "coconut milk",
+            "amount": 400,
+            "unit": "ml"
+          },
+          {
+            "name": "vegetable oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "salt",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "fresh cilantro, chopped",
+            "amount": 0.25,
+            "unit": "cup"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Heat oil in a large pan over medium heat. Add onions and cook until soft and translucent, about 5 minutes.",
+            "time": 5
+          },
+          {
+            "text": "Add garlic and ginger, cook for another minute until fragrant.",
+            "time": 1
+          },
+          {
+            "text": "Add curry powder, turmeric, cumin, and cook for 30 seconds, stirring constantly.",
+            "time": 0.5
+          },
+          {
+            "text": "Add chicken pieces and cook until they begin to brown on all sides, about 5-7 minutes.",
+            "time": 7
+          },
+          {
+            "text": "Pour in crushed tomatoes, stir well, and let simmer for 5 minutes.",
+            "time": 5
+          },
+          {
+            "text": "Add coconut milk and salt. Bring to a gentle simmer and cook uncovered for 15-20 minutes until chicken is cooked through and sauce has thickened slightly.",
+            "time": 20
+          },
+          {
+            "text": "Stir in garam masala and let cook for an additional 2 minutes.",
+            "time": 2
+          },
+          {
+            "text": "Garnish with fresh cilantro and serve with rice or naan bread.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "420 kcal",
+          "Protein": "35g",
+          "Carbs": "12g",
+          "Fat": "27g",
+          "Fiber": "3g",
+          "Sugar": "5g"
+        }
+      },
+      {
+        "id": "salmon-baked",
+        "title": "Lemon Herb Baked Salmon",
+        "description": "Tender, flaky salmon fillets baked with fresh herbs, lemon, and garlic. A quick and healthy dinner option rich in omega-3 fatty acids.",
+        "category": "dinner",
+        "time": 25,
+        "servings": 4,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe7/salmon-baked.jpg",
+        "ingredients": [
+          {
+            "name": "salmon fillets",
+            "amount": 700,
+            "unit": "g"
+          },
+          {
+            "name": "olive oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "lemon, thinly sliced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "lemon juice",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "fresh dill, chopped",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "fresh parsley, chopped",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "salt",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.5,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Preheat oven to 375°F (190°C) and line a baking sheet with parchment paper.",
+            "time": 5
+          },
+          {
+            "text": "Place salmon fillets on the prepared baking sheet, skin side down.",
+            "time": null
+          },
+          {
+            "text": "In a small bowl, mix olive oil, lemon juice, garlic, salt, and pepper.",
+            "time": null
+          },
+          {
+            "text": "Brush the mixture over the salmon fillets. Sprinkle with fresh dill and parsley.",
+            "time": null
+          },
+          {
+            "text": "Arrange lemon slices on top of and around the salmon fillets.",
+            "time": null
+          },
+          {
+            "text": "Bake for 15-18 minutes, or until salmon is cooked through and flakes easily with a fork.",
+            "time": 18
+          },
+          {
+            "text": "Garnish with additional fresh herbs and serve immediately with your choice of side dishes.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "280 kcal",
+          "Protein": "34g",
+          "Carbs": "2g",
+          "Fat": "16g",
+          "Fiber": "1g",
+          "Sugar": "1g"
+        }
+      },
+      {
+        "id": "chocolate-cookies",
+        "title": "Chewy Chocolate Chip Cookies",
+        "description": "Classic chocolate chip cookies with a soft center and crispy edges. The perfect balance of sweet and chocolatey goodness.",
+        "category": "dessert",
+        "time": 30,
+        "servings": 24,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe8/chocolate-cookies.jpg",
+        "ingredients": [
+          {
+            "name": "all-purpose flour",
+            "amount": 280,
+            "unit": "g"
+          },
+          {
+            "name": "baking soda",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "unsalted butter, softened",
+            "amount": 170,
+            "unit": "g"
+          },
+          {
+            "name": "granulated sugar",
+            "amount": 150,
+            "unit": "g"
+          },
+          {
+            "name": "brown sugar, packed",
+            "amount": 150,
+            "unit": "g"
+          },
+          {
+            "name": "vanilla extract",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "large eggs",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "semisweet chocolate chips",
+            "amount": 300,
+            "unit": "g"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Preheat oven to 350°F (175°C) and line baking sheets with parchment paper.",
+            "time": 5
+          },
+          {
+            "text": "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "time": null
+          },
+          {
+            "text": "In a large bowl, beat butter, granulated sugar, brown sugar, and vanilla extract until creamy, about 2 minutes.",
+            "time": 2
+          },
+          {
+            "text": "Add eggs one at a time, beating well after each addition.",
+            "time": null
+          },
+          {
+            "text": "Gradually beat in flour mixture until just combined. Do not overmix.",
+            "time": null
+          },
+          {
+            "text": "Stir in chocolate chips by hand.",
+            "time": null
+          },
+          {
+            "text": "Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.",
+            "time": null
+          },
+          {
+            "text": "Bake for 9-11 minutes or until golden brown around the edges but still soft in the center.",
+            "time": 10
+          },
+          {
+            "text": "Allow cookies to cool on the baking sheet for 2 minutes, then transfer to wire racks to cool completely.",
+            "time": 2
+          }
+        ],
+        "nutrition": {
+          "Calories": "180 kcal",
+          "Protein": "2g",
+          "Carbs": "24g",
+          "Fat": "9g",
+          "Fiber": "1g",
+          "Sugar": "16g"
+        }
+      },
+      {
+        "id": "apple-crisp",
+        "title": "Easy Apple Crisp",
+        "description": "A warm and comforting dessert featuring tender spiced apples topped with a crispy oat and brown sugar topping. Perfect with vanilla ice cream.",
+        "category": "dessert",
+        "time": 50,
+        "servings": 8,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe9/apple-crisp.jpg",
+        "ingredients": [
+          {
+            "name": "apples, peeled, cored and sliced",
+            "amount": 6,
+            "unit": ""
+          },
+          {
+            "name": "granulated sugar",
+            "amount": 50,
+            "unit": "g"
+          },
+          {
+            "name": "ground cinnamon",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "lemon juice",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "all-purpose flour",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "old-fashioned oats",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "brown sugar, packed",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "ground nutmeg",
+            "amount": 0.25,
+            "unit": "tsp"
+          },
+          {
+            "name": "unsalted butter, cold and cubed",
+            "amount": 115,
+            "unit": "g"
+          },
+          {
+            "name": "salt",
+            "amount": 0.25,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Preheat oven to 350°F (175°C). Butter a 9x9 inch baking dish.",
+            "time": 5
+          },
+          {
+            "text": "In a large bowl, toss apple slices with granulated sugar, 1/2 teaspoon cinnamon, and lemon juice. Spread evenly in the prepared baking dish.",
+            "time": null
+          },
+          {
+            "text": "In a medium bowl, mix flour, oats, brown sugar, remaining cinnamon, nutmeg, and salt.",
+            "time": null
+          },
+          {
+            "text": "Cut in butter using a pastry blender or your fingers until mixture resembles coarse crumbs.",
+            "time": null
+          },
+          {
+            "text": "Sprinkle topping evenly over the apple mixture.",
+            "time": null
+          },
+          {
+            "text": "Bake for 35-40 minutes or until topping is golden brown and filling is bubbly.",
+            "time": 40
+          },
+          {
+            "text": "Allow to cool slightly before serving. Delicious when served warm with vanilla ice cream.",
+            "time": 5
+          }
+        ],
+        "nutrition": {
+          "Calories": "270 kcal",
+          "Protein": "2g",
+          "Carbs": "45g",
+          "Fat": "11g",
+          "Fiber": "3g",
+          "Sugar": "30g"
+        }
+      },
+      {
+        "id": "greek-salad",
+        "title": "Classic Greek Salad",
+        "description": "A refreshing traditional Greek salad with crisp vegetables, tangy feta cheese, and Kalamata olives dressed in olive oil and oregano.",
+        "category": "lunch",
+        "time": 15,
+        "servings": 4,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe10/greek-salad.jpg",
+        "ingredients": [
+          {
+            "name": "English cucumber, chopped",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "ripe tomatoes, cut into wedges",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "green bell pepper, sliced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "red onion, thinly sliced",
+            "amount": 0.5,
+            "unit": ""
+          },
+          {
+            "name": "feta cheese, cubed",
+            "amount": 200,
+            "unit": "g"
+          },
+          {
+            "name": "kalamata olives",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "extra virgin olive oil",
+            "amount": 4,
+            "unit": "tbsp"
+          },
+          {
+            "name": "dried oregano",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "red wine vinegar",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.25,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "In a large bowl, combine cucumber, tomatoes, bell pepper, and red onion.",
+            "time": null
+          },
+          {
+            "text": "Add the olives and gently toss to combine.",
+            "time": null
+          },
+          {
+            "text": "In a small bowl, whisk together olive oil, red wine vinegar, oregano, salt, and pepper to make the dressing.",
+            "time": null
+          },
+          {
+            "text": "Pour the dressing over the salad and toss gently to coat.",
+            "time": null
+          },
+          {
+            "text": "Place the feta cheese on top of the salad, either as a large piece or crumbled, according to preference.",
+            "time": null
+          },
+          {
+            "text": "Sprinkle with additional oregano if desired and serve immediately.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "260 kcal",
+          "Protein": "8g",
+          "Carbs": "10g",
+          "Fat": "22g",
+          "Fiber": "3g",
+          "Sugar": "6g"
+        }
+      },
+      {
+        "id": "mushroom-risotto",
+        "title": "Creamy Mushroom Risotto",
+        "description": "A rich and creamy Italian risotto with sautéed mushrooms, white wine, and Parmesan cheese. The perfect comfort food for any night of the week.",
+        "category": "dinner",
+        "time": 40,
+        "servings": 4,
+        "difficulty": "Medium",
+        "image": "images/recipes/recipe11/mushroom-risotto.jpg",
+        "ingredients": [
+          {
+            "name": "arborio rice",
+            "amount": 300,
+            "unit": "g"
+          },
+          {
+            "name": "mixed mushrooms, sliced",
+            "amount": 350,
+            "unit": "g"
+          },
+          {
+            "name": "onion, finely chopped",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "vegetable broth, warm",
+            "amount": 1.2,
+            "unit": "l"
+          },
+          {
+            "name": "dry white wine",
+            "amount": 120,
+            "unit": "ml"
+          },
+          {
+            "name": "butter",
+            "amount": 50,
+            "unit": "g"
+          },
+          {
+            "name": "olive oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "grated Parmesan cheese",
+            "amount": 75,
+            "unit": "g"
+          },
+          {
+            "name": "fresh thyme leaves",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "salt",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.5,
+            "unit": "tsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "In a large pan, heat 1 tablespoon of olive oil over medium heat. Add mushrooms and thyme, sauté until mushrooms are golden and their liquid has evaporated, about 5-7 minutes. Remove and set aside.",
+            "time": 7
+          },
+          {
+            "text": "In the same pan, heat remaining olive oil and half the butter. Add onion and cook until soft and translucent, about 3-4 minutes.",
+            "time": 4
+          },
+          {
+            "text": "Add garlic and cook for another minute.",
+            "time": 1
+          },
+          {
+            "text": "Add arborio rice and stir to coat with oil and butter. Toast the rice for 1-2 minutes until slightly translucent at the edges.",
+            "time": 2
+          },
+          {
+            "text": "Pour in the white wine and stir until completely absorbed.",
+            "time": 2
+          },
+          {
+            "text": "Add warm broth one ladle at a time, stirring constantly and allowing each addition to be absorbed before adding more. This will take about 18-20 minutes.",
+            "time": 20
+          },
+          {
+            "text": "When rice is creamy but still has a slight bite (al dente), stir in the sautéed mushrooms, remaining butter, and Parmesan cheese.",
+            "time": null
+          },
+          {
+            "text": "Season with salt and pepper to taste. Cover and let rest for 2 minutes before serving.",
+            "time": 2
+          },
+          {
+            "text": "Serve hot, garnished with additional Parmesan cheese and fresh thyme if desired.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "450 kcal",
+          "Protein": "12g",
+          "Carbs": "65g",
+          "Fat": "15g",
+          "Fiber": "3g",
+          "Sugar": "3g"
+        }
+      },
+      {
+        "id": "banana-bread",
+        "title": "Moist Banana Bread",
+        "description": "A delicious way to use ripe bananas, this banana bread is moist, tender, and full of banana flavor. Perfect for breakfast or as a snack with coffee.",
+        "category": "breakfast",
+        "time": 75,
+        "servings": 10,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe12/banana-bread.jpg",
+        "ingredients": [
+          {
+            "name": "very ripe bananas, mashed",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "all-purpose flour",
+            "amount": 250,
+            "unit": "g"
+          },
+          {
+            "name": "baking soda",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "unsalted butter, melted",
+            "amount": 115,
+            "unit": "g"
+          },
+          {
+            "name": "brown sugar, packed",
+            "amount": 150,
+            "unit": "g"
+          },
+          {
+            "name": "large eggs",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "vanilla extract",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "chopped walnuts (optional)",
+            "amount": 100,
+            "unit": "g"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Preheat oven to 350°F (175°C) and grease a 9x5 inch loaf pan.",
+            "time": 5
+          },
+          {
+            "text": "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "time": null
+          },
+          {
+            "text": "In a large bowl, mix melted butter and brown sugar until well combined.",
+            "time": null
+          },
+          {
+            "text": "Add eggs one at a time, beating well after each addition, then stir in vanilla extract.",
+            "time": null
+          },
+          {
+            "text": "Stir in mashed bananas until well combined.",
+            "time": null
+          },
+          {
+            "text": "Fold in flour mixture just until combined. Do not overmix.",
+            "time": null
+          },
+          {
+            "text": "If using, fold in chopped walnuts.",
+            "time": null
+          },
+          {
+            "text": "Pour batter into prepared loaf pan and smooth the top.",
+            "time": null
+          },
+          {
+            "text": "Bake for 55-60 minutes, or until a toothpick inserted into the center comes out clean.",
+            "time": 60
+          },
+          {
+            "text": "Allow bread to cool in the pan for 10 minutes, then remove to a wire rack to cool completely before slicing.",
+            "time": 10
+          }
+        ],
+        "nutrition": {
+          "Calories": "290 kcal",
+          "Protein": "4g",
+          "Carbs": "43g",
+          "Fat": "12g",
+          "Fiber": "2g",
+          "Sugar": "21g"
+        }
+      },
+      {
+        "id": "vegetable-stir-fry",
+        "title": "Quick Vegetable Stir Fry",
+        "description": "A colorful and nutritious stir fry loaded with fresh vegetables in a savory sauce. Ready in minutes and perfect for busy weeknights.",
+        "category": "dinner",
+        "time": 20,
+        "servings": 4,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe13/vegetable-stir-fry.jpg",
+        "ingredients": [
+          {
+            "name": "broccoli florets",
+            "amount": 250,
+            "unit": "g"
+          },
+          {
+            "name": "bell peppers, sliced (mixed colors)",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "carrots, julienned",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "snap peas",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "mushrooms, sliced",
+            "amount": 150,
+            "unit": "g"
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "ginger, grated",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "vegetable oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "soy sauce",
+            "amount": 3,
+            "unit": "tbsp"
+          },
+          {
+            "name": "toasted sesame oil",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "cornstarch",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "water",
+            "amount": 0.25,
+            "unit": "cup"
+          },
+          {
+            "name": "honey or maple syrup",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "red pepper flakes (optional)",
+            "amount": 0.25,
+            "unit": "tsp"
+          },
+          {
+            "name": "sesame seeds, for garnish",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "green onions, sliced, for garnish",
+            "amount": 2,
+            "unit": ""
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Prepare sauce by mixing water, soy sauce, sesame oil, cornstarch, and honey in a small bowl. Set aside.",
+            "time": null
+          },
+          {
+            "text": "Heat vegetable oil in a large wok or frying pan over high heat.",
+            "time": null
+          },
+          {
+            "text": "Add garlic and ginger, stir-fry for 30 seconds until fragrant.",
+            "time": 0.5
+          },
+          {
+            "text": "Add carrots and stir-fry for 2 minutes.",
+            "time": 2
+          },
+          {
+            "text": "Add broccoli, bell peppers, and mushrooms. Stir-fry for 3-4 minutes until vegetables begin to soften but are still crisp.",
+            "time": 4
+          },
+          {
+            "text": "Add snap peas and stir-fry for another minute.",
+            "time": 1
+          },
+          {
+            "text": "Pour the sauce over the vegetables and toss to coat. Cook for 1-2 minutes until sauce thickens.",
+            "time": 2
+          },
+          {
+            "text": "Add red pepper flakes if using.",
+            "time": null
+          },
+          {
+            "text": "Garnish with sesame seeds and green onions before serving.",
+            "time": null
+          },
+          {
+            "text": "Serve hot over rice or noodles.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "150 kcal",
+          "Protein": "5g",
+          "Carbs": "20g",
+          "Fat": "7g",
+          "Fiber": "6g",
+          "Sugar": "10g"
+        }
+      },
+      {
+        "id": "chia-pudding",
+        "title": "Overnight Chia Seed Pudding",
+        "description": "A nutritious make-ahead breakfast pudding made with chia seeds, milk, and your favorite toppings. High in fiber and omega-3 fatty acids.",
+        "category": "breakfast",
+        "time": 5,
+        "servings": 2,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe14/chia-pudding.jpg",
+        "ingredients": [
+          {
+            "name": "chia seeds",
+            "amount": 6,
+            "unit": "tbsp"
+          },
+          {
+            "name": "milk (dairy or plant-based)",
+            "amount": 400,
+            "unit": "ml"
+          },
+          {
+            "name": "maple syrup or honey",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "vanilla extract",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "pinch of salt",
+            "amount": 1,
+            "unit": "pinch"
+          },
+          {
+            "name": "fresh berries, for topping",
+            "amount": 100,
+            "unit": "g"
+          },
+          {
+            "name": "sliced banana, for topping",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "chopped nuts, for topping",
+            "amount": 2,
+            "unit": "tbsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "In a medium bowl, whisk together chia seeds, milk, maple syrup, vanilla extract, and salt.",
+            "time": null
+          },
+          {
+            "text": "Let the mixture sit for 5 minutes, then whisk again to break up any clumps.",
+            "time": 5
+          },
+          {
+            "text": "Cover and refrigerate for at least 4 hours or overnight. The pudding will thicken as it sets.",
+            "time": 240
+          },
+          {
+            "text": "Before serving, stir the pudding. If it's too thick, add a little more milk to reach desired consistency.",
+            "time": null
+          },
+          {
+            "text": "Serve in bowls or jars topped with fresh berries, sliced banana, and chopped nuts.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "220 kcal",
+          "Protein": "7g",
+          "Carbs": "25g",
+          "Fat": "12g",
+          "Fiber": "10g",
+          "Sugar": "12g"
+        }
+      },
+      {
+        "id": "black-bean-burger",
+        "title": "Black Bean Veggie Burgers",
+        "description": "Hearty and flavorful vegetarian burgers made with black beans, vegetables, and spices. A healthy alternative to traditional meat burgers.",
+        "category": "dinner",
+        "time": 40,
+        "servings": 4,
+        "difficulty": "Medium",
+        "image": "images/recipes/recipe15/black-bean-burger.jpg",
+        "ingredients": [
+          {
+            "name": "black beans, drained and rinsed",
+            "amount": 450,
+            "unit": "g"
+          },
+          {
+            "name": "onion, finely chopped",
+            "amount": 0.5,
+            "unit": ""
+          },
+          {
+            "name": "bell pepper, finely chopped",
+            "amount": 0.5,
+            "unit": ""
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "flax egg (1 tbsp ground flaxseed + 3 tbsp water)",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "breadcrumbs",
+            "amount": 80,
+            "unit": "g"
+          },
+          {
+            "name": "cumin",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "smoked paprika",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "chili powder",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.75,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.25,
+            "unit": "tsp"
+          },
+          {
+            "name": "olive oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "hamburger buns",
+            "amount": 4,
+            "unit": ""
+          },
+          {
+            "name": "lettuce, tomato, and other toppings as desired",
+            "amount": 1,
+            "unit": "to taste"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Prepare flax egg by mixing ground flaxseed with water. Let sit for 5 minutes to thicken.",
+            "time": 5
+          },
+          {
+            "text": "Preheat oven to 375°F (190°C) and line a baking sheet with parchment paper.",
+            "time": null
+          },
+          {
+            "text": "In a large bowl, mash black beans with a fork or potato masher, leaving some beans partially intact for texture.",
+            "time": null
+          },
+          {
+            "text": "Heat 1 tablespoon olive oil in a pan over medium heat. Add onion and bell pepper, cook until softened, about 5 minutes. Add garlic and cook for another minute.",
+            "time": 6
+          },
+          {
+            "text": "Add vegetable mixture to the mashed beans along with flax egg, breadcrumbs, and all spices. Mix well to combine.",
+            "time": null
+          },
+          {
+            "text": "Divide mixture into 4 equal portions and form into patties about 3/4 inch thick.",
+            "time": null
+          },
+          {
+            "text": "Heat remaining olive oil in a large skillet over medium heat. Cook patties for 4-5 minutes on each side until browned and crisp on the outside.",
+            "time": 10
+          },
+          {
+            "text": "Transfer patties to the prepared baking sheet and bake for 10-12 minutes to heat through.",
+            "time": 12
+          },
+          {
+            "text": "Serve on hamburger buns with your favorite toppings and condiments.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "320 kcal",
+          "Protein": "12g",
+          "Carbs": "48g",
+          "Fat": "10g",
+          "Fiber": "12g",
+          "Sugar": "5g"
+        }
+      },
+      {
+        "id": "roasted-vegetables",
+        "title": "Simple Roasted Vegetables",
+        "description": "A colorful medley of oven-roasted vegetables with herbs and olive oil. Perfect as a side dish or add to salads, bowls, and pasta.",
+        "category": "dinner",
+        "time": 35,
+        "servings": 4,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe16/roasted-vegetables.jpg",
+        "ingredients": [
+          {
+            "name": "sweet potato, cubed",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "bell peppers, chopped (mixed colors)",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "zucchini, sliced",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "red onion, cut into wedges",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "broccoli florets",
+            "amount": 200,
+            "unit": "g"
+          },
+          {
+            "name": "cherry tomatoes",
+            "amount": 200,
+            "unit": "g"
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "olive oil",
+            "amount": 3,
+            "unit": "tbsp"
+          },
+          {
+            "name": "dried oregano",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "dried thyme",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "balsamic vinegar (optional)",
+            "amount": 1,
+            "unit": "tbsp"
+          },
+          {
+            "name": "fresh parsley, chopped, for garnish",
+            "amount": 2,
+            "unit": "tbsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Preheat oven to 425°F (220°C) and line a large baking sheet with parchment paper.",
+            "time": 5
+          },
+          {
+            "text": "In a large bowl, combine sweet potato, bell peppers, zucchini, red onion, broccoli, and cherry tomatoes.",
+            "time": null
+          },
+          {
+            "text": "Add minced garlic, olive oil, oregano, thyme, salt, and pepper. Toss to coat all vegetables evenly.",
+            "time": null
+          },
+          {
+            "text": "Spread vegetables in a single layer on the prepared baking sheet. Don't overcrowd the pan (use two sheets if necessary).",
+            "time": null
+          },
+          {
+            "text": "Roast for 25-30 minutes, stirring halfway through, until vegetables are tender and lightly browned around the edges.",
+            "time": 30
+          },
+          {
+            "text": "If using, drizzle with balsamic vinegar immediately after removing from the oven.",
+            "time": null
+          },
+          {
+            "text": "Garnish with fresh parsley before serving.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "160 kcal",
+          "Protein": "4g",
+          "Carbs": "20g",
+          "Fat": "8g",
+          "Fiber": "6g",
+          "Sugar": "10g"
+        }
+      },
+      {
+        "id": "hummus",
+        "title": "Homemade Hummus",
+        "description": "Smooth and creamy chickpea dip with tahini, lemon, and garlic. Perfect for snacking with vegetables or pita bread, or as a sandwich spread.",
+        "category": "snack",
+        "time": 10,
+        "servings": 6,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe17/hummus.jpg",
+        "ingredients": [
+          {
+            "name": "chickpeas (garbanzo beans), drained and rinsed",
+            "amount": 400,
+            "unit": "g"
+          },
+          {
+            "name": "tahini",
+            "amount": 60,
+            "unit": "ml"
+          },
+          {
+            "name": "lemon juice, fresh",
+            "amount": 3,
+            "unit": "tbsp"
+          },
+          {
+            "name": "garlic cloves",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "extra virgin olive oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "cumin",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "water",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "paprika, for garnish",
+            "amount": 0.25,
+            "unit": "tsp"
+          },
+          {
+            "name": "olive oil, for drizzling",
+            "amount": 1,
+            "unit": "tbsp"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "In a food processor, combine chickpeas, tahini, lemon juice, garlic, olive oil, cumin, and salt.",
+            "time": null
+          },
+          {
+            "text": "Process until smooth, about 1-2 minutes, scraping down the sides as needed.",
+            "time": 2
+          },
+          {
+            "text": "With the processor running, slowly add water until you reach your desired consistency.",
+            "time": null
+          },
+          {
+            "text": "Taste and adjust seasonings as needed, adding more salt, lemon juice, or cumin if desired.",
+            "time": null
+          },
+          {
+            "text": "Transfer to a serving bowl, drizzle with olive oil, and sprinkle with paprika.",
+            "time": null
+          },
+          {
+            "text": "Serve with pita bread, vegetables, or use as a spread for sandwiches and wraps.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "170 kcal",
+          "Protein": "6g",
+          "Carbs": "15g",
+          "Fat": "10g",
+          "Fiber": "5g",
+          "Sugar": "2g"
+        }
+      },
+      {
+        "id": "oatmeal-cookies",
+        "title": "Oatmeal Raisin Cookies",
+        "description": "Soft and chewy oatmeal cookies packed with plump raisins and warm spices. These classic cookies make a perfect afternoon treat with a glass of milk.",
+        "category": "dessert",
+        "time": 25,
+        "servings": 24,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe18/oatmeal-cookies.jpg",
+        "ingredients": [
+          {
+            "name": "rolled oats",
+            "amount": 180,
+            "unit": "g"
+          },
+          {
+            "name": "all-purpose flour",
+            "amount": 125,
+            "unit": "g"
+          },
+          {
+            "name": "baking soda",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "ground cinnamon",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "unsalted butter, softened",
+            "amount": 115,
+            "unit": "g"
+          },
+          {
+            "name": "brown sugar, packed",
+            "amount": 150,
+            "unit": "g"
+          },
+          {
+            "name": "granulated sugar",
+            "amount": 50,
+            "unit": "g"
+          },
+          {
+            "name": "large egg",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "vanilla extract",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "raisins",
+            "amount": 150,
+            "unit": "g"
+          },
+          {
+            "name": "chopped walnuts (optional)",
+            "amount": 75,
+            "unit": "g"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Preheat oven to 350°F (175°C) and line baking sheets with parchment paper.",
+            "time": 5
+          },
+          {
+            "text": "In a medium bowl, whisk together oats, flour, baking soda, cinnamon, and salt.",
+            "time": null
+          },
+          {
+            "text": "In a large bowl, beat butter and both sugars until creamy, about 2 minutes.",
+            "time": 2
+          },
+          {
+            "text": "Add egg and vanilla extract to the butter mixture and beat until well combined.",
+            "time": null
+          },
+          {
+            "text": "Gradually stir the dry ingredients into the wet ingredients until just combined.",
+            "time": null
+          },
+          {
+            "text": "Fold in raisins and nuts (if using).",
+            "time": null
+          },
+          {
+            "text": "Drop rounded tablespoons of dough onto the prepared baking sheets, spacing about 2 inches apart.",
+            "time": null
+          },
+          {
+            "text": "Bake for 10-12 minutes, or until cookies are golden around the edges but still soft in the center.",
+            "time": 12
+          },
+          {
+            "text": "Allow cookies to cool on the baking sheet for 5 minutes, then transfer to a wire rack to cool completely.",
+            "time": 5
+          }
+        ],
+        "nutrition": {
+          "Calories": "140 kcal",
+          "Protein": "2g",
+          "Carbs": "22g",
+          "Fat": "5g",
+          "Fiber": "1g",
+          "Sugar": "12g"
+        }
+      },
+      {
+        "id": "tomato-soup",
+        "title": "Creamy Tomato Basil Soup",
+        "description": "A comforting homemade tomato soup with fresh basil and a touch of cream. Perfect paired with a grilled cheese sandwich for a classic meal.",
+        "category": "lunch",
+        "time": 35,
+        "servings": 4,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe19/tomato-soup.jpg",
+        "ingredients": [
+          {
+            "name": "olive oil",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "onion, chopped",
+            "amount": 1,
+            "unit": ""
+          },
+          {
+            "name": "garlic cloves, minced",
+            "amount": 3,
+            "unit": ""
+          },
+          {
+            "name": "carrots, chopped",
+            "amount": 2,
+            "unit": ""
+          },
+          {
+            "name": "canned whole tomatoes",
+            "amount": 800,
+            "unit": "g"
+          },
+          {
+            "name": "tomato paste",
+            "amount": 2,
+            "unit": "tbsp"
+          },
+          {
+            "name": "vegetable broth",
+            "amount": 500,
+            "unit": "ml"
+          },
+          {
+            "name": "dried oregano",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "granulated sugar",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "black pepper",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "fresh basil leaves, chopped",
+            "amount": 0.25,
+            "unit": "cup"
+          },
+          {
+            "name": "heavy cream",
+            "amount": 60,
+            "unit": "ml"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Heat olive oil in a large pot over medium heat. Add onion and cook until translucent, about 5 minutes.",
+            "time": 5
+          },
+          {
+            "text": "Add garlic and cook for another minute until fragrant.",
+            "time": 1
+          },
+          {
+            "text": "Add carrots and cook for 5 minutes until beginning to soften.",
+            "time": 5
+          },
+          {
+            "text": "Add canned tomatoes with their juice, breaking them up with a spoon. Stir in tomato paste, vegetable broth, oregano, sugar, salt, and pepper.",
+            "time": null
+          },
+          {
+            "text": "Bring to a boil, then reduce heat and simmer for 15-20 minutes until carrots are very soft.",
+            "time": 20
+          },
+          {
+            "text": "Add most of the basil, reserving some for garnish.",
+            "time": null
+          },
+          {
+            "text": "Use an immersion blender to puree the soup until smooth (or transfer to a blender in batches).",
+            "time": null
+          },
+          {
+            "text": "Return to low heat and stir in the heavy cream. Adjust seasonings to taste.",
+            "time": null
+          },
+          {
+            "text": "Serve hot, garnished with remaining fresh basil and a drizzle of cream if desired.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "180 kcal",
+          "Protein": "3g",
+          "Carbs": "20g",
+          "Fat": "11g",
+          "Fiber": "5g",
+          "Sugar": "12g"
+        }
+      },
+      {
+        "id": "granola",
+        "title": "Homemade Crunchy Granola",
+        "description": "A nutritious and customizable breakfast granola with oats, nuts, and dried fruits. Perfect with yogurt or milk for a wholesome start to your day.",
+        "category": "breakfast",
+        "time": 40,
+        "servings": 12,
+        "difficulty": "Easy",
+        "image": "images/recipes/recipe20/granola.jpg",
+        "ingredients": [
+          {
+            "name": "rolled oats",
+            "amount": 300,
+            "unit": "g"
+          },
+          {
+            "name": "mixed nuts, roughly chopped",
+            "amount": 150,
+            "unit": "g"
+          },
+          {
+            "name": "seeds (sunflower, pumpkin, etc.)",
+            "amount": 50,
+            "unit": "g"
+          },
+          {
+            "name": "shredded coconut (unsweetened)",
+            "amount": 50,
+            "unit": "g"
+          },
+          {
+            "name": "ground cinnamon",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "salt",
+            "amount": 0.5,
+            "unit": "tsp"
+          },
+          {
+            "name": "coconut oil, melted",
+            "amount": 60,
+            "unit": "ml"
+          },
+          {
+            "name": "maple syrup or honey",
+            "amount": 80,
+            "unit": "ml"
+          },
+          {
+            "name": "vanilla extract",
+            "amount": 1,
+            "unit": "tsp"
+          },
+          {
+            "name": "dried fruits (raisins, cranberries, chopped apricots)",
+            "amount": 100,
+            "unit": "g"
+          }
+        ],
+        "instructions": [
+          {
+            "text": "Preheat oven to 325°F (165°C) and line a large baking sheet with parchment paper.",
+            "time": 5
+          },
+          {
+            "text": "In a large bowl, combine oats, nuts, seeds, coconut, cinnamon, and salt.",
+            "time": null
+          },
+          {
+            "text": "In a small bowl, whisk together melted coconut oil, maple syrup, and vanilla extract.",
+            "time": null
+          },
+          {
+            "text": "Pour the wet ingredients over the dry ingredients and stir until everything is well coated.",
+            "time": null
+          },
+          {
+            "text": "Spread the mixture evenly on the prepared baking sheet.",
+            "time": null
+          },
+          {
+            "text": "Bake for 25-30 minutes, stirring every 10 minutes, until golden brown.",
+            "time": 30
+          },
+          {
+            "text": "Remove from oven and let cool completely on the baking sheet. The granola will crisp up as it cools.",
+            "time": 15
+          },
+          {
+            "text": "Once cooled, add dried fruits and mix well.",
+            "time": null
+          },
+          {
+            "text": "Store in an airtight container at room temperature for up to 2 weeks.",
+            "time": null
+          }
+        ],
+        "nutrition": {
+          "Calories": "240 kcal",
+          "Protein": "6g",
+          "Carbs": "28g",
+          "Fat": "12g",
+          "Fiber": "4g",
+          "Sugar": "12g"
+        }
+      }
+    ]
+  }

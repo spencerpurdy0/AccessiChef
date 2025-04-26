@@ -1,0 +1,115 @@
+/**
+ * AccessiChef - Default Theme
+ * 
+ * This stylesheet contains the default color scheme and styling for the AccessiChef application.
+ * It serves as the base theme and will be active by default.
+ */
+
+ :root {
+    /* Color variables */
+    --primary-color: #5b8e7d;
+    --secondary-color: #8fc0a9;
+    --accent-color: #f8b400;
+    --text-color: #333333;
+    --background-color: #ffffff;
+    --light-background: #f8f9fa;
+    --border-color: #dee2e6;
+    
+    /* Card colors */
+    --card-background: #ffffff;
+    --card-border: #dee2e6;
+    
+    /* Button colors */
+    --btn-primary-bg: #5b8e7d;
+    --btn-primary-text: #ffffff;
+    --btn-secondary-bg: #f8f9fa;
+    --btn-secondary-text: #333333;
+    
+    /* Form colors */
+    --input-background: #ffffff;
+    --input-border: #ced4da;
+    --input-text: #333333;
+    
+    /* Focus state */
+    --focus-outline-color: #4299e1;
+}
+
+/* Apply theme colors to elements */
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header and navigation */
+.navbar {
+    background-color: var(--light-background) !important;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Card elements */
+.card {
+    background-color: var(--card-background);
+    border-color: var(--card-border);
+}
+
+.card-header, .card-footer {
+    background-color: var(--light-background);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+    color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-bg);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary-bg);
+    border-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+}
+
+/* Form elements */
+input, select, textarea {
+    background-color: var(--input-background);
+    border-color: var(--input-border);
+    color: var(--input-text);
+}
+
+/* Focus states */
+a:focus, button:focus, input:focus, select:focus, textarea:focus, [tabindex]:focus {
+    outline-color: var(--focus-outline-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--light-background);
+    color: var(--text-color);
+}

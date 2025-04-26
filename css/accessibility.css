@@ -1,0 +1,291 @@
+/**
+ * AccessiChef - Accessibility Stylesheet
+ * 
+ * This stylesheet contains accessibility-specific styling for the AccessiChef
+ * application, including focus states, skip links, and other accessibility
+ * enhancements to improve usability for all users.
+ */
+
+/* ====================
+   Accessibility Utilities
+   ==================== */
+
+/* Skip link for keyboard users to bypass navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Screen reader only class - visually hidden but accessible to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Make visually hidden elements visible when focused */
+.sr-only-focusable:not(:focus),
+.sr-only-focusable:not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Enhanced focus states for better keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+    outline: 3px solid #4299e1;
+    outline-offset: 2px;
+}
+
+/* Reduced motion option for users who prefer minimal animations */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ====================
+   Text Sizing Controls
+   ==================== */
+
+/* Text size classes that can be applied via JavaScript */
+.text-size-1 {
+    font-size: 0.875rem !important;
+}
+
+.text-size-2 {
+    font-size: 1rem !important;
+}
+
+.text-size-3 {
+    font-size: 1.125rem !important;
+}
+
+.text-size-4 {
+    font-size: 1.25rem !important;
+}
+
+.text-size-5 {
+    font-size: 1.375rem !important;
+}
+
+/* Adjust heading sizes proportionally */
+.text-size-3 h1 {
+    font-size: 2rem !important;
+}
+
+.text-size-3 h2 {
+    font-size: 1.75rem !important;
+}
+
+.text-size-4 h1 {
+    font-size: 2.25rem !important;
+}
+
+.text-size-4 h2 {
+    font-size: 2rem !important;
+}
+
+.text-size-5 h1 {
+    font-size: 2.5rem !important;
+}
+
+.text-size-5 h2 {
+    font-size: 2.25rem !important;
+}
+
+/* ====================
+   Simplified View Mode
+   ==================== */
+
+/* When simplified view is enabled */
+.simplified-view .recipe-header {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.simplified-view .recipe-image {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.simplified-view .recipe-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.simplified-view .tab-content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.simplified-view .instructions-list li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.simplified-view .card {
+    box-shadow: none;
+    border: 1px solid #eee;
+}
+
+.simplified-view .card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* ====================
+   Accessible Form Elements
+   ==================== */
+
+/* Larger click/touch targets for buttons and controls */
+.accessible-controls button,
+.accessible-controls .btn,
+.accessible-controls input[type="button"],
+.accessible-controls input[type="submit"],
+.accessible-controls input[type="reset"] {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 10px 15px;
+}
+
+/* Better visible form field focus state */
+.accessible-controls input:focus,
+.accessible-controls select:focus,
+.accessible-controls textarea:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+/* Label emphasis for form elements */
+.accessible-controls label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* ====================
+   Step-by-Step View
+   ==================== */
+
+/* Styling for the step-by-step instruction mode */
+.step-instruction {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.step-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.timer-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* ====================
+   Print Styles
+   ==================== */
+
+@media print {
+    /* Hide navigation and controls */
+    header, 
+    footer, 
+    .recipe-controls, 
+    .instructions-controls,
+    .nav-tabs,
+    button {
+        display: none !important;
+    }
+    
+    /* Show all content regardless of tab state */
+    .tab-pane {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    /* Clean styling */
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    img {
+        page-break-inside: avoid;
+        max-width: 100% !important;
+    }
+    
+    ul, ol, li {
+        page-break-inside: avoid;
+    }
+    
+    /* Add URL after links */
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+    }
+    
+    /* Don't add URL after image links or internal links */
+    a[href^="http://localhost"]:after,
+    a[href^="#"]:after,
+    a[href*="javascript:"]:after,
+    a[href^="/"]:after,
+    a[href*="mailto:"]:after,
+    a[href$=".jpg"]:after,
+    a[href$=".jpeg"]:after,
+    a[href$=".png"]:after,
+    a[href$=".gif"]:after {
+        content: "";
+    }
+}

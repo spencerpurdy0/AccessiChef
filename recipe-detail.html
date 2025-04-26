@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details - AccessiChef</title>
+    
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="css/themes/default.css">
+    
+    <!-- Font Awesome for accessible icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip navigation link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with accessible navigation -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/accessichef-logo.png" alt="AccessiChef Logo" width="30" height="30" class="d-inline-block align-top">
+                AccessiChef
+            </a>
+            
+            <!-- Hamburger menu for mobile with proper ARIA attributes -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarMain" aria-controls="navbarMain" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <nav class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <!-- Accessibility controls -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accessibilityDropdown" 
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accessibility
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accessibilityDropdown">
+                            <li><button class="dropdown-item" id="theme-default">Default Theme</button></li>
+                            <li><button class="dropdown-item" id="theme-high-contrast">High Contrast</button></li>
+                            <li><button class="dropdown-item" id="theme-large-text">Large Text</button></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="text-increase">Increase Text Size</button></li>
+                            <li><button class="dropdown-item" id="text-decrease">Decrease Text Size</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main content area -->
+    <main id="main-content" class="container my-4">
+        <div class="back-link mb-3">
+            <a href="index.html" class="btn btn-outline-primary">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Recipes
+            </a>
+        </div>
+        
+        <!-- Recipe detail section -->
+        <section id="recipe-detail" aria-labelledby="recipe-title">
+            <div class="recipe-header-placeholder">
+                <p class="text-center">Loading recipe details...</p>
+            </div>
+            
+            <!-- Template for recipe header, will be populated by JavaScript -->
+            <div id="recipe-header" class="d-none">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img id="recipe-image" src="" alt="" class="img-fluid rounded recipe-image">
+                    </div>
+                    <div class="col-md-7">
+                        <h1 id="recipe-title"></h1>
+                        <div class="recipe-meta">
+                            <p><i class="fas fa-clock" aria-hidden="true"></i> <span id="recipe-time"></span> <span class="sr-only">cooking time</span></p>
+                            <p><i class="fas fa-utensils" aria-hidden="true"></i> <span id="recipe-servings"></span> <span class="sr-only">servings</span></p>
+                            <p><i class="fas fa-signal" aria-hidden="true"></i> <span id="recipe-difficulty"></span> <span class="sr-only">difficulty level</span></p>
+                        </div>
+                        <div id="recipe-description" class="mt-3"></div>
+                        
+                        <!-- Accessibility controls specific to the recipe -->
+                        <div class="recipe-controls mt-3">
+                            <button id="simplified-view-toggle" class="btn btn-outline-secondary me-2">
+                                <i class="fas fa-glasses" aria-hidden="true"></i> Simplified View
+                            </button>
+                            <button id="print-recipe" class="btn btn-outline-secondary">
+                                <i class="fas fa-print" aria-hidden="true"></i> Print Recipe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Recipe tabs navigation - accessible tab interface -->
+        <section class="recipe-content mt-4">
+            <div class="recipe-tabs-placeholder d-none">
+                <p class="text-center">Loading recipe content...</p>
+            </div>
+            
+            <div id="recipe-tabs" class="d-none">
+                <ul class="nav nav-tabs" id="recipeTabList" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="ingredients-tab" data-bs-toggle="tab" 
+                                data-bs-target="#ingredients" type="button" role="tab" 
+                                aria-controls="ingredients" aria-selected="true">
+                            Ingredients
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="instructions-tab" data-bs-toggle="tab" 
+                                data-bs-target="#instructions" type="button" role="tab" 
+                                aria-controls="instructions" aria-selected="false">
+                            Instructions
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nutrition-tab" data-bs-toggle="tab" 
+                                data-bs-target="#nutrition" type="button" role="tab" 
+                                aria-controls="nutrition" aria-selected="false">
+                            Nutrition
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content p-3 border border-top-0 rounded-bottom" id="recipeTabContent">
+                    <!-- Ingredients tab -->
+                    <div class="tab-pane fade show active" id="ingredients" role="tabpanel" 
+                         aria-labelledby="ingredients-tab">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h2>Ingredients</h2>
+                                <div class="measurement-switch mb-3">
+                                    <span>Measurement Units:</span>
+                                    <div class="btn-group" role="group" aria-label="Measurement units">
+                                        <button type="button" class="btn btn-outline-primary active" 
+                                                id="metric-btn" aria-pressed="true">Metric</button>
+                                        <button type="button" class="btn btn-outline-primary" 
+                                                id="imperial-btn" aria-pressed="false">Imperial</button>
+                                    </div>
+                                </div>
+                                <ul id="ingredients-list" class="ingredients-list">
+                                    <!-- Ingredients will be added here by JavaScript -->
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Adjustments</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="servings-adjustment">Servings:</label>
+                                            <div class="input-group">
+                                                <button class="btn btn-outline-secondary" type="button" 
+                                                        id="decrease-servings" aria-label="Decrease servings">
+                                                    <i class="fas fa-minus" aria-hidden="true"></i>
+                                                </button>
+                                                <input type="number" id="servings-adjustment" 
+                                                       class="form-control text-center" value="4" min="1" max="20">
+                                                <button class="btn btn-outline-secondary" type="button" 
+                                                        id="increase-servings" aria-label="Increase servings">
+                                                    <i class="fas fa-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Instructions tab -->
+                    <div class="tab-pane fade" id="instructions" role="tabpanel" 
+                         aria-labelledby="instructions-tab">
+                        <h2>Instructions</h2>
+                        <div class="instructions-controls mb-3">
+                            <button id="step-by-step-toggle" class="btn btn-outline-primary">
+                                <i class="fas fa-list-ol" aria-hidden="true"></i> Step-by-Step Mode
+                            </button>
+                        </div>
+                        
+                        <!-- Standard view - all steps visible -->
+                        <div id="all-steps-view">
+                            <ol id="instructions-list" class="instructions-list">
+                                <!-- Instructions will be added here by JavaScript -->
+                            </ol>
+                        </div>
+                        
+                        <!-- Step-by-step view - only one step visible at a time -->
+                        <div id="step-by-step-view" class="d-none">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h3 class="mb-0">Step <span id="current-step-number">1</span> of <span id="total-steps">0</span></h3>
+                                    <div class="step-timer">
+                                        <button id="timer-toggle" class="btn btn-sm btn-outline-secondary" disabled>
+                                            <i class="fas fa-stopwatch" aria-hidden="true"></i> Start Timer
+                                        </button>
+                                        <span id="timer-display" class="ms-2">00:00</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p id="current-step-text">Loading steps...</p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="prev-step" class="btn btn-outline-primary" disabled>
+                                            <i class="fas fa-arrow-left" aria-hidden="true"></i> Previous
+                                        </button>
+                                        <button id="next-step" class="btn btn-primary">
+                                            Next <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Nutrition tab -->
+                    <div class="tab-pane fade" id="nutrition" role="tabpanel" 
+                         aria-labelledby="nutrition-tab">
+                        <h2>Nutrition Information</h2>
+                        <p>Per serving</p>
+                        
+                        <div id="nutrition-list" class="nutrition-list">
+                            <!-- Nutrition info will be added here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer with accessibility information -->
+    <footer class="bg-light py-3 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 AccessiChef. A project for COMP 5970/6970 Assistive and Accessible Computing.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <button id="accessibility-statement-btn" class="btn btn-link">Accessibility Statement</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/utils/timer.js"></script>
+    <script src="js/utils/converter.js"></script>
+    <script src="js/recipes.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

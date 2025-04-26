@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About AccessiChef - Accessible Recipe Assistant</title>
+    
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="css/themes/default.css">
+    
+    <!-- Font Awesome for accessible icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip navigation link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with accessible navigation -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/accessichef-logo.png" alt="AccessiChef Logo" width="30" height="30" class="d-inline-block align-top">
+                AccessiChef
+            </a>
+            
+            <!-- Hamburger menu for mobile with proper ARIA attributes -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarMain" aria-controls="navbarMain" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <nav class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html" aria-current="page">About</a>
+                    </li>
+                    <!-- Accessibility controls -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="accessibilityDropdown" 
+                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Accessibility
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accessibilityDropdown">
+                            <li><button class="dropdown-item" id="theme-default">Default Theme</button></li>
+                            <li><button class="dropdown-item" id="theme-high-contrast">High Contrast</button></li>
+                            <li><button class="dropdown-item" id="theme-large-text">Large Text</button></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="text-increase">Increase Text Size</button></li>
+                            <li><button class="dropdown-item" id="text-decrease">Decrease Text Size</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main content area -->
+    <main id="main-content" class="container my-4">
+        <section class="about-section">
+            <h1>About AccessiChef</h1>
+            
+            <div class="row mt-4">
+                <div class="col-md-8">
+                    <h2>Our Mission</h2>
+                    <p>AccessiChef is designed to make cooking accessible to everyone, regardless of ability. Our application provides recipe instructions in multiple formats to accommodate users with various disabilities, including vision impairments, motor limitations, and cognitive challenges.</p>
+                    
+                    <h2>Accessibility Features</h2>
+                    <ul>
+                        <li><strong>Screen Reader Compatibility:</strong> All elements are properly labeled with ARIA attributes for screen reader navigation.</li>
+                        <li><strong>Keyboard Navigation:</strong> The entire application can be operated using only a keyboard.</li>
+                        <li><strong>High Contrast Mode:</strong> Optional high contrast theme for users with vision impairments.</li>
+                        <li><strong>Text Size Adjustment:</strong> Easily increase or decrease text size without affecting layout.</li>
+                        <li><strong>Step-by-Step Instructions:</strong> Recipes are broken down into clear, manageable steps.</li>
+                        <li><strong>Timer Functionality:</strong> Visual and audio timers for cooking steps.</li>
+                        <li><strong>Simplified View:</strong> Reduced-distraction view for users with cognitive disabilities.</li>
+                    </ul>
+                    
+                    <h2>About the Developer</h2>
+                    <p>This application was developed as a semester project for COMP 5970/6970 Assistive and Accessible Computing at Auburn University. The goal was to create a practical, accessible mobile web application that demonstrates universal design principles and provides a valuable service to users with disabilities.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Accessibility Statement</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>AccessiChef is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
+                            <p>The application follows the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards.</p>
+                            <p>If you encounter any accessibility barriers while using AccessiChef, please contact us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer with accessibility information -->
+    <footer class="bg-light py-3 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 AccessiChef. A project for COMP 5970/6970 Assistive and Accessible Computing.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <button id="accessibility-statement-btn" class="btn btn-link">Accessibility Statement</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/accessibility.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
