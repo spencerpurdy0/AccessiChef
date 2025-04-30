@@ -22,6 +22,11 @@ const AccessiChef = {
     currentPage: '',
     
     /**
+     * Current recipe data
+     */
+    currentRecipe: null,
+    
+    /**
      * Initialize the application
      */
     init: function() {
@@ -111,11 +116,15 @@ const AccessiChef = {
         // Load and display recipe details
         RecipeManager.loadRecipe(recipeId)
             .then(recipe => {
+                this.currentRecipe = recipe;
                 this.displayRecipeDetails(recipe);
                 document.querySelector('.recipe-header-placeholder').classList.add('d-none');
                 document.querySelector('.recipe-tabs-placeholder').classList.add('d-none');
                 document.getElementById('recipe-header').classList.remove('d-none');
                 document.getElementById('recipe-tabs').classList.remove('d-none');
+                
+                // Initialize servings adjustment
+                this.initServingsAdjustment();
             })
             .catch(error => {
                 console.error('Error loading recipe details:', error);
@@ -253,28 +262,14 @@ const AccessiChef = {
         document.getElementById('recipe-difficulty').textContent = recipe.difficulty;
         document.getElementById('recipe-description').textContent = recipe.description;
         
-        // Update ingredients list
-        const ingredientsList = document.getElementById('ingredients-list');
-        ingredientsList.innerHTML = '';
+        // Set initial servings
+        const servingsInput = document.getElementById('servings-adjustment');
+        if (servingsInput) {
+            servingsInput.value = recipe.servings;
+        }
         
-        recipe.ingredients.forEach(ingredient => {
-            const li = document.createElement('li');
-            
-            // Add data attributes for metric and imperial units
-            li.dataset.metricAmount = ingredient.amount;
-            li.dataset.metricUnit = ingredient.unit;
-            li.dataset.imperialAmount = MeasurementConverter.convertToImperial(ingredient.amount, ingredient.unit).amount;
-            li.dataset.imperialUnit = MeasurementConverter.convertToImperial(ingredient.amount, ingredient.unit).unit;
-            
-            // Display in metric by default
-            li.innerHTML = `
-                <span class="ingredient-amount">${ingredient.amount}</span>
-                <span class="ingredient-unit">${ingredient.unit}</span>
-                <span class="ingredient-name">${ingredient.name}</span>
-            `;
-            
-            ingredientsList.appendChild(li);
-        });
+        // Update ingredients list
+        this.updateIngredientsList(recipe, recipe.servings);
         
         // Update instructions list
         const instructionsList = document.getElementById('instructions-list');
@@ -317,6 +312,101 @@ const AccessiChef = {
         
         // Initialize measurement unit conversion
         this.initMeasurementConversion();
+    },
+    
+    /**
+     * Update ingredients list with adjusted quantities
+     * @param {Object} recipe - Recipe object
+     * @param {number} servings - Number of servings
+     */
+    updateIngredientsList: function(recipe, servings) {
+        const ingredientsList = document.getElementById('ingredients-list');
+        ingredientsList.innerHTML = '';
+        
+        const servingsRatio = servings / recipe.servings;
+        
+        recipe.ingredients.forEach(ingredient => {
+            const li = document.createElement('li');
+            
+            // Calculate adjusted amount
+            const adjustedAmount = ingredient.amount * servingsRatio;
+            
+            // Add data attributes for metric and imperial units
+            li.dataset.metricAmount = adjustedAmount;
+            li.dataset.metricUnit = ingredient.unit;
+            li.dataset.imperialAmount = MeasurementConverter.convertToImperial(adjustedAmount, ingredient.unit).amount;
+            li.dataset.imperialUnit = MeasurementConverter.convertToImperial(adjustedAmount, ingredient.unit).unit;
+            
+            // Display in metric by default
+            li.innerHTML = `
+                <span class="ingredient-amount">${adjustedAmount}</span>
+                <span class="ingredient-unit">${ingredient.unit}</span>
+                <span class="ingredient-name">${ingredient.name}</span>
+            `;
+            
+            ingredientsList.appendChild(li);
+        });
+        
+        // Update display based on current unit selection
+        const metricBtn = document.getElementById('metric-btn');
+        const imperialBtn = document.getElementById('imperial-btn');
+        
+        if (imperialBtn && imperialBtn.classList.contains('active')) {
+            this.convertToImperial();
+        } else if (metricBtn) {
+            this.convertToMetric();
+        }
+    },
+    
+    /**
+     * Initialize servings adjustment functionality
+     */
+    initServingsAdjustment: function() {
+        const servingsInput = document.getElementById('servings-adjustment');
+        const increaseBtn = document.getElementById('increase-servings');
+        const decreaseBtn = document.getElementById('decrease-servings');
+        
+        if (servingsInput) {
+            // Update on input change
+            servingsInput.addEventListener('change', () => {
+                const newServings = parseInt(servingsInput.value, 10);
+                if (newServings > 0) {
+                    this.updateIngredientsList(this.currentRecipe, newServings);
+                    document.getElementById('recipe-servings').textContent = `${newServings} servings`;
+                    
+                    // Announce to screen readers
+                    this.announceToScreenReader(`Servings adjusted to ${newServings}`);
+                }
+            });
+        }
+        
+        if (increaseBtn) {
+            // Increase servings button
+            increaseBtn.addEventListener('click', () => {
+                const currentServings = parseInt(servingsInput.value, 10);
+                const newServings = currentServings + 1;
+                servingsInput.value = newServings;
+                
+                // Trigger change event
+                const event = new Event('change');
+                servingsInput.dispatchEvent(event);
+            });
+        }
+        
+        if (decreaseBtn) {
+            // Decrease servings button
+            decreaseBtn.addEventListener('click', () => {
+                const currentServings = parseInt(servingsInput.value, 10);
+                if (currentServings > 1) {
+                    const newServings = currentServings - 1;
+                    servingsInput.value = newServings;
+                    
+                    // Trigger change event
+                    const event = new Event('change');
+                    servingsInput.dispatchEvent(event);
+                }
+            });
+        }
     },
     
     /**
@@ -450,14 +540,7 @@ const AccessiChef = {
             imperialBtn.classList.remove('active');
             imperialBtn.setAttribute('aria-pressed', 'false');
             
-            const ingredients = document.querySelectorAll('#ingredients-list li');
-            ingredients.forEach(ingredient => {
-                const amountEl = ingredient.querySelector('.ingredient-amount');
-                const unitEl = ingredient.querySelector('.ingredient-unit');
-                
-                amountEl.textContent = ingredient.dataset.metricAmount;
-                unitEl.textContent = ingredient.dataset.metricUnit;
-            });
+            this.convertToMetric();
             
             // Announce to screen readers
             this.announceToScreenReader('Measurements converted to metric units');
@@ -470,17 +553,38 @@ const AccessiChef = {
             metricBtn.classList.remove('active');
             metricBtn.setAttribute('aria-pressed', 'false');
             
-            const ingredients = document.querySelectorAll('#ingredients-list li');
-            ingredients.forEach(ingredient => {
-                const amountEl = ingredient.querySelector('.ingredient-amount');
-                const unitEl = ingredient.querySelector('.ingredient-unit');
-                
-                amountEl.textContent = ingredient.dataset.imperialAmount;
-                unitEl.textContent = ingredient.dataset.imperialUnit;
-            });
+            this.convertToImperial();
             
             // Announce to screen readers
             this.announceToScreenReader('Measurements converted to imperial units');
+        });
+    },
+    
+    /**
+     * Convert all ingredients to metric units
+     */
+    convertToMetric: function() {
+        const ingredients = document.querySelectorAll('#ingredients-list li');
+        ingredients.forEach(ingredient => {
+            const amountEl = ingredient.querySelector('.ingredient-amount');
+            const unitEl = ingredient.querySelector('.ingredient-unit');
+            
+            amountEl.textContent = ingredient.dataset.metricAmount;
+            unitEl.textContent = ingredient.dataset.metricUnit;
+        });
+    },
+    
+    /**
+     * Convert all ingredients to imperial units
+     */
+    convertToImperial: function() {
+        const ingredients = document.querySelectorAll('#ingredients-list li');
+        ingredients.forEach(ingredient => {
+            const amountEl = ingredient.querySelector('.ingredient-amount');
+            const unitEl = ingredient.querySelector('.ingredient-unit');
+            
+            amountEl.textContent = ingredient.dataset.imperialAmount;
+            unitEl.textContent = ingredient.dataset.imperialUnit;
         });
     },
     
